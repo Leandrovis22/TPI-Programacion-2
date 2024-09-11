@@ -1,7 +1,7 @@
 {
   "name": "tpi-programacion-2",
   "version": "1.0.0",
-  "description": "Una aplicación de gestión de tareas con Electron",
+  "description": "Aplicación de gestión de tareas con Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

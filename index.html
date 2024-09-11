@@ -3,23 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Aplicacion Lista To do</title>
+    <title>Aplicación Lista de Tareas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="app">
-        <h1>Lista To do</h1>
-        <input type="text" id="taskInput" placeholder="Añadir nueva tarea">
-        <button id="addTask">Añadir</button>
-        <ul id="taskList"></ul>
+    <div id="aplicacion">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="entradaTarea" placeholder="Añadir nueva tarea">
+        <button id="añadirTarea">Añadir</button>
+        <ul id="listaTareas"></ul>
     </div>
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span id="closeModal" class="close">&times;</span>
+    <div id="ventanaEmergente" class="ventana-emergente">
+        <div class="contenido-ventana-emergente">
+            <span id="cerrarVentanaEmergente" class="cerrar">&times;</span>
             <h2>Editar tarea</h2>
-            <input type="text" id="editTaskInput">
-            <button id="saveEdit">Guardar</button>
+            <input type="text" id="entradaEditarTarea">
+            <button id="guardarEdicion">Guardar</button>
         </div>
     </div>
     <script src="renderer.js"></script>

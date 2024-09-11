@@ -1,8 +1,8 @@
 const { app, BrowserWindow } = require('electron')
-const path = require('path')
 
-function createWindow() {
-    const win = new BrowserWindow({
+// Crea una nueva ventana
+function crearVentana() {
+    const ventana = new BrowserWindow({
         width: 800,
         height: 600,
         webPreferences: {
@@ -11,21 +11,23 @@ function createWindow() {
         }
     })
 
-    win.loadFile('index.html')
+    ventana.loadFile('index.html')
 }
 
+// Cuando la aplicación esté lista, se crea la ventana
 app.whenReady().then(() => {
-    createWindow()
+    crearVentana()
 
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) {
-            createWindow()
+            crearVentana()
         }
     })
 })
 
+// Cierra la aplicación cuando todas las ventanas se cierran, evento de electron window-all-closed
 app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
-        app.quit()
-    }
+
+    app.quit()
+
 })
