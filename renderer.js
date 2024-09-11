@@ -35,9 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const li = document.createElement('li');
         li.innerHTML = `
             <span class="task">${taskText}</span>
-            <button class="edit">Editar</button>
-            <button class="complete">Completar</button>
-            <button class="delete">Eliminar</button>
+            <div>
+                <button class="edit">Editar</button>
+                <button class="complete">Completado</button>
+                <button class="delete">Eliminar</button>
+            </div>
         `;
 
         // Función de eliminar

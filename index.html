@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-   <html>
-   <head>
-     <meta charset="UTF-8">
-     <title>Todo List App</title>
-     <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-     <div id="app">
-       <h1>Todo List</h1>
-       <input type="text" id="taskInput" placeholder="Añadir nueva tarea">
-       <button id="addTask">Añadir</button>
-       <ul id="taskList"></ul>
-     </div>
-     <div id="editModal" class="modal">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicacion Lista To do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Lista To do</h1>
+        <input type="text" id="taskInput" placeholder="Añadir nueva tarea">
+        <button id="addTask">Añadir</button>
+        <ul id="taskList"></ul>
+    </div>
+    <div id="editModal" class="modal">
         <div class="modal-content">
-          <span id="closeModal" class="close">&times;</span>
-          <h2>Editar tarea</h2>
-          <input type="text" id="editTaskInput">
-          <button id="saveEdit">Guardar</button>
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Editar tarea</h2>
+            <input type="text" id="editTaskInput">
+            <button id="saveEdit">Guardar</button>
         </div>
-      </div>
-     <script src="renderer.js"></script>
-   </body>
-   </html>
-   
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
