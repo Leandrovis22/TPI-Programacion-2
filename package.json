@@ -5,36 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "make": "electron-forge make",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Leandro Viscolungo",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "latest",
-    "electron-forge": "latest"
-  },
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "tpi-programacion-2",
-            "authors": "Leandro Viscolungo"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+    "electron": "latest"
   }
 }
