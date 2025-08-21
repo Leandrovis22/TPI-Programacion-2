@@ -3,26 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Aplicación Lista de Tareas</title>
+    <title>Aplicación Lista de Tareas y Memoria</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="aplicacion">
-        <h1>Lista de Tareas</h1>
-        <input type="text" id="entradaTarea" placeholder="Añadir nueva tarea">
-        <button id="añadirTarea">Añadir</button>
-        <ul id="listaTareas"></ul>
-    </div>
-    <div id="ventanaEmergente" class="ventana-emergente">
-        <div class="contenido-ventana-emergente">
-            <span id="cerrarVentanaEmergente" class="cerrar">&times;</span>
-            <h2>Editar tarea</h2>
-            <input type="text" id="entradaEditarTarea">
-            <button id="guardarEdicion">Guardar</button>
+    <!-- Navegación -->
+    <nav id="navegacion">
+        <div class="botones-nav">
+            <button id="btnListaTareas" class="nav-btn active">Lista de Tareas</button>
+            <button id="btnMemoria" class="nav-btn">Memoria</button>
+        </div>
+    </nav>
+
+    <!-- Sección Lista de Tareas -->
+    <div id="seccionTareas" class="seccion active">
+        <div id="aplicacion">
+            <h1>Lista de Tareas</h1>
+            <input type="text" id="entradaTarea" placeholder="Añadir nueva tarea">
+            <button id="añadirTarea">Añadir</button>
+            <ul id="listaTareas"></ul>
+        </div>
+        <div id="ventanaEmergente" class="ventana-emergente">
+            <div class="contenido-ventana-emergente">
+                <span id="cerrarVentanaEmergente" class="cerrar">&times;</span>
+                <h2>Editar tarea</h2>
+                <input type="text" id="entradaEditarTarea">
+                <button id="guardarEdicion">Guardar</button>
+            </div>
         </div>
     </div>
+
+    <!-- Sección Juego de Memoria -->
+    <div id="seccionMemoria" class="seccion">
+        <div id="juegoMemoria">
+            <div class="progreso">
+                <h2>Intentos: <span id="intentos">0</span></h2>
+                <p>Pares encontrados: <span id="paresEncontrados">0</span></p>
+            </div>
+            
+            <div id="gridCartas" class="grid-cartas">
+                <!-- Las cartas se generarán dinámicamente -->
+            </div>
+            
+            <button id="reiniciarJuego" class="btn-reiniciar">
+                Reiniciar
+            </button>
+        </div>
+    </div>
+
     <script src="renderer.js"></script>
+    <script src="memoria.js"></script>
+    <script src="navegacion.js"></script>
 </body>
 
 </html>

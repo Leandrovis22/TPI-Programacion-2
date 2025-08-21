@@ -11,6 +11,7 @@ function crearVentana() {
         }
     })
 
+    ventana.maximize()  // Maximizar después de crear
     ventana.loadFile('index.html')
 }
 

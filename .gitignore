@@ -1,3 +1,30 @@
-node_modules
-out
-tpi-programacion-2.exe
+# Dependencias
+node_modules/
+
+# Ejecutables y builds de Electron
+dist/
+out/
+build/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Configuración del IDE
+.vscode/
+.idea/
+
+# Variables de entorno
+.env
+.env.local
+
+# Archivos de cache
+.cache/
