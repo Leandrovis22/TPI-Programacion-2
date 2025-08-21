@@ -1,6 +1,5 @@
 const { app, BrowserWindow } = require('electron')
 
-// Crea una nueva ventana
 function crearVentana() {
     const ventana = new BrowserWindow({
         width: 800,
@@ -15,7 +14,6 @@ function crearVentana() {
     ventana.loadFile('index.html')
 }
 
-// Cuando la aplicación esté lista, se crea la ventana
 app.whenReady().then(() => {
     crearVentana()
 
@@ -26,7 +24,6 @@ app.whenReady().then(() => {
     })
 })
 
-// Cierra la aplicación cuando todas las ventanas se cierran, evento de electron window-all-closed
 app.on('window-all-closed', () => {
 
     app.quit()

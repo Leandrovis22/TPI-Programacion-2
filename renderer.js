@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Se ejecuta cargar las tareas guardadas al iniciar
+    // Ejecuta cargar las tareas guardadas al iniciar
     cargarTareas();
 
     // Añadir tarea con el botón

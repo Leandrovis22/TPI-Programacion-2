@@ -4,13 +4,17 @@
   "description": "Aplicación de gestión de tareas con Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "electron .",
+  "build-win": "electron-builder --win",
+  "pack-linux": "electron-packager . --platform=linux --arch=x64 --out=dist/ --overwrite"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "latest"
+    "app-builder-bin": "^4.2.0",
+    "electron": "latest",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2"
   }
 }

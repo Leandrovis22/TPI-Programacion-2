@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function mostrarSeccion(seccionActiva, botonActivo) {
         // Ocultar todas las secciones
         document.querySelectorAll('.seccion').forEach(seccion => {
-            seccion.classList.remove('active');
+            seccion.classList.remove('activo');
         });
         
-        // Remover clase active de todos los botones
+        // Remover clase activo de todos los botones
         document.querySelectorAll('.nav-btn').forEach(btn => {
-            btn.classList.remove('active');
+            btn.classList.remove('activo');
         });
         
         // Mostrar sección seleccionada
-        seccionActiva.classList.add('active');
-        botonActivo.classList.add('active');
+        seccionActiva.classList.add('activo');
+        botonActivo.classList.add('activo');
     }
 
     // Event listeners para los botones de navegación

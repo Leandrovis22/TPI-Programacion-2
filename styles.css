@@ -110,7 +110,7 @@ li {
     background-color: #4a6741;
 }
 
-.nav-btn.active {
+.nav-btn.activo {
     background-color: #3498db;
 }
 
@@ -121,7 +121,7 @@ li {
     margin: 0 auto;
 }
 
-.seccion.active {
+.seccion.activo {
     display: block;
 }
 
